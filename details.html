@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details | Khattab Ali Hassan</title>
+  <meta name="description" content="Detailed professional qualifications, work experience, academic education, languages, training, and projects of Khattab Ali Hassan.">
+  
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Global Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-en"> <!-- Default to English; JavaScript will load user preference -->
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="lang-en">Khattab Ali Hassan</span>
+        <span class="lang-ar nav-brand-ar">خطاب علي حسن</span>
+      </a>
+      
+      <!-- Mobile navigation menu button toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">
+          <span class="lang-en">Home</span>
+          <span class="lang-ar">الرئيسية</span>
+        </a>
+        <a href="details.html" class="nav-link active">
+          <span class="lang-en">Details</span>
+          <span class="lang-ar">تفاصيل</span>
+        </a>
+        <a href="index.html#contact" class="nav-link">
+          <span class="lang-en">Contact</span>
+          <span class="lang-ar">لنتواصل</span>
+        </a>
+        <button class="lang-switch-btn" id="langSwitchBtn">
+          <span class="lang-en">AR</span>
+          <span class="lang-ar">EN</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main class="container" style="padding-top: var(--space-lg); padding-bottom: var(--space-xl); min-height: 70vh;">
+    
+    <!-- ==========================================================================
+         14. DETAILS DASHBOARD VIEW (ID: overview)
+         ========================================================================== -->
+    <div id="overview" class="details-subview active">
+      <h1 style="text-align: center;">
+        <span class="lang-en">Profile Details</span>
+        <span class="lang-ar">تفاصيل الملف التعريفي</span>
+      </h1>
+      <p style="text-align: center; max-width: 600px; margin: 0 auto var(--space-md) auto;">
+        <span class="lang-en">Select a section below to review specific details regarding my professional experience, academic history, skills, languages, and projects.</span>
+        <span class="lang-ar">اختر أحد الأقسام أدناه للاطلاع على تفاصيل خبراتي المهنية، وسجلّي الأكاديمي، ومهاراتي، ولغاتي، ومشاريعي.</span>
+      </p>
+      
+      <div style="text-align: center; margin-bottom: var(--space-lg);">
+        <a href="main/cv/Khattab_Ali_Hassan_CV.pdf" target="_blank" download class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+          <span class="lang-en">Download CV (PDF)</span>
+          <span class="lang-ar">تحميل السيرة الذاتية (PDF)</span>
+        </a>
+      </div>
+      
+      <div class="details-dashboard">
+        <!-- 1. Research Card (FIRST) -->
+        <button class="dashboard-card" onclick="navigateToSection('research')" aria-label="Open Research Details">
+          <div>
+            <div class="dashboard-card-title">
+              <span class="lang-en">Academic &amp; Independent Research</span>
+              <span class="lang-ar">البحوث الأكاديمية والمستقلة</span>
+            </div>
+            <div class="dashboard-card-desc">
+              <span class="lang-en">A collection of academic papers, independent studies, and analytical research.</span>
+              <span class="lang-ar">مجموعة من الأوراق الأكاديمية، الدراسات المستقلة، والبحوث التحليلية.</span>
+            </div>
+          </div>
+          <span class="dashboard-card-action">
+            <span class="lang-en">View Details —</span>
+            <span class="lang-ar">عرض التفاصيل —</span>
+          </span>
+        </button>
+
+        <!-- 2. Experience Card -->
+        <button class="dashboard-card" onclick="navigateToSection('experience')" aria-label="Open Experience Details">
+          <div>
+            <div class="dashboard-card-title">
+              <span class="lang-en">Experience</span>
+              <span class="lang-ar">الخبرة المهنية</span>
+            </div>
+            <div class="dashboard-card-desc">
+              <span class="lang-en">7+ years of work across the private sector and organizations in administration, finance, and operations.</span>
+              <span class="lang-ar">أكثر من 7 سنوات من العمل في القطاع الخاص والمنظمات في الإدارة والمالية والعمليات.</span>
+            </div>
+          </div>
+          <span class="dashboard-card-action">
+            <span class="lang-en">View Details —</span>
+            <span class="lang-ar">عرض التفاصيل —</span>
+          </span>
+        </button>
+
+        <!-- 3. Skills Card -->
+        <button class="dashboard-card" onclick="navigateToSection('skills')" aria-label="Open Skills Details">
+          <div>
+            <div class="dashboard-card-title">
+              <span class="lang-en">Skills</span>
+              <span class="lang-ar">المهارات</span>
+            </div>
+            <div class="dashboard-card-desc">
+              <span class="lang-en">Core capabilities in administration, finance, warehousing, research, and technical tools.</span>
+              <span class="lang-ar">القدرات الأساسية في الإدارة، المالية، المخازن، البحوث والتحليل، والأدوات التقنية.</span>
+            </div>
+          </div>
+          <span class="dashboard-card-action">
+            <span class="lang-en">View Details —</span>
+            <span class="lang-ar">عرض التفاصيل —</span>
+          </span>
+        </button>
+
+        <!-- 4. Education Card -->
+        <button class="dashboard-card" onclick="navigateToSection('education')" aria-label="Open Education Details">
+          <div>
+            <div class="dashboard-card-title">
+              <span class="lang-en">Education</span>
+              <span class="lang-ar">التعليم</span>
+            </div>
+            <div class="dashboard-card-desc">
+              <span class="lang-en">Academic qualifications including a Bachelor's Degree in Economics &amp; Administration (Department of Economics) and a Professional Diploma in Accounting.</span>
+              <span class="lang-ar">المؤهلات الأكاديمية بما في ذلك بكالوريوس في الاقتصاد والإدارة (قسم الاقتصاد) ودبلوم مهني في المحاسبة.</span>
+            </div>
+          </div>
+          <span class="dashboard-card-action">
+            <span class="lang-en">View Details —</span>
+            <span class="lang-ar">عرض التفاصيل —</span>
+          </span>
+        </button>
+
+        <!-- 5. Languages Card -->
+        <button class="dashboard-card" onclick="navigateToSection('languages')" aria-label="Open Languages Details">
+          <div>
+            <div class="dashboard-card-title">
+              <span class="lang-en">Languages</span>
+              <span class="lang-ar">اللغات</span>
+            </div>
+            <div class="dashboard-card-desc">
+              <span class="lang-en">Proficiency in Arabic and English, with readiness to provide standardized language certifications upon request.</span>
+              <span class="lang-ar">إجادة اللغتين العربية والإنجليزية، مع الاستعداد لتقديم شهادات الكفاءة اللغوية المعتمدة عند الطلب.</span>
+            </div>
+          </div>
+          <span class="dashboard-card-action">
+            <span class="lang-en">View Details —</span>
+            <span class="lang-ar">عرض التفاصيل —</span>
+          </span>
+        </button>
+
+        <!-- 6. Training & Courses Card -->
+        <button class="dashboard-card" onclick="navigateToSection('training')" aria-label="Open Training Details">
+          <div>
+            <div class="dashboard-card-title">
+              <span class="lang-en">Training &amp; Courses</span>
+              <span class="lang-ar">التدريب والدورات</span>
+            </div>
+            <div class="dashboard-card-desc">
+              <span class="lang-en">Professional certifications and courses supporting administration and operations.</span>
+              <span class="lang-ar">الشهادات المهنية والدورات التدريبية الداعمة للمهام الإدارية والتشغيلية.</span>
+            </div>
+          </div>
+          <span class="dashboard-card-action">
+            <span class="lang-en">View Details —</span>
+            <span class="lang-ar">عرض التفاصيل —</span>
+          </span>
+        </button>
+
+        <!-- 7. Projects Card -->
+        <button class="dashboard-card" onclick="navigateToSection('projects')" aria-label="Open Projects Details">
+          <div>
+            <div class="dashboard-card-title">
+              <span class="lang-en">Projects</span>
+              <span class="lang-ar">المشاريع</span>
+            </div>
+            <div class="dashboard-card-desc">
+              <span class="lang-en">Professional portfolio highlighting practical, operational, and research projects.</span>
+              <span class="lang-ar">المشروعات المهنية التي تسلط الضوء على الأعمال التشغيلية والبحثية والعملية.</span>
+            </div>
+          </div>
+          <span class="dashboard-card-action">
+            <span class="lang-en">View Details —</span>
+            <span class="lang-ar">عرض التفاصيل —</span>
+          </span>
+        </button>
+
+
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         15. EXPERIENCE SUB-VIEW (ID: experience)
+         ========================================================================== -->
+    <div id="experience" class="details-subview">
+      <div class="subview-header">
+        <h2>
+          <span class="lang-en">Professional Experience</span>
+          <span class="lang-ar">الخبرة المهنية</span>
+        </h2>
+        <button class="subview-back-btn" onclick="navigateToSection('overview')" aria-label="Back to Overview">
+          <span class="lang-en">&larr; Back to Dashboard</span>
+          <span class="lang-ar">&rarr; العودة للوحة التحكم</span>
+        </button>
+      </div>
+      
+      <div class="hero-meta-fields" style="border-bottom: none; margin-bottom: var(--space-md); padding-bottom: 0;">
+        <span class="lang-en" style="font-weight: 600; font-size: 1.2rem; color: var(--accent-color);">7+ Years of Professional Experience</span>
+        <span class="lang-ar" style="font-weight: 600; font-size: 1.2rem; color: var(--accent-color);">أكثر من 7 سنوات من الخبرة المهنية</span>
+      </div>
+
+      <div class="exp-list">
+        <h3 style="text-align: center; margin-bottom: var(--space-md); margin-top: var(--space-sm);">
+          <span class="lang-en">Organizations & Professional Experience</span>
+          <span class="lang-ar">المنظمات والخبرة المهنية</span>
+        </h3>
+
+        <!-- Unified Organizations Logos -->
+        <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 4px; padding: var(--space-lg); margin-bottom: var(--space-lg);">
+          <div style="display: flex; justify-content: center; align-items: flex-start; gap: var(--space-xl); flex-wrap: wrap;">
+            <!-- Foundation Janat al-frdous -->
+            <div style="text-align: center; max-width: 160px;">
+              <img src="main/work/jf.jpg" alt="Foundation Janat al-frdous For Relief And Develoment" style="height: 70px; object-fit: contain; margin-bottom: 0.5rem;">
+              <div style="font-size: 0.85rem; font-weight: 500; color: var(--text-primary); line-height: 1.3;">
+                <span class="lang-en">Foundation Janat al-frdous For Relief And Develoment</span>
+                <span class="lang-ar">مؤسسة جنة الفردوس للإغاثة والتنمية</span>
+              </div>
+            </div>
+            
+            <!-- ASB Iraq -->
+            <div style="text-align: center; max-width: 160px;">
+              <img src="main/work/ASB.jpg" alt="ASB Iraq (Arbeiter-Samariter-Bund)" style="height: 70px; object-fit: contain; margin-bottom: 0.5rem;">
+              <div style="font-size: 0.85rem; font-weight: 500; color: var(--text-primary); line-height: 1.3;">
+                <span class="lang-en">ASB Iraq (Arbeiter-Samariter-Bund)</span>
+                <span class="lang-ar">منظمة ASB العراق</span>
+              </div>
+            </div>
+
+            <!-- UNDP -->
+            <div style="text-align: center; max-width: 160px;">
+              <img src="main/work/undp.jpg" alt="United National Develoment Program" style="height: 70px; object-fit: contain; margin-bottom: 0.5rem;">
+              <div style="font-size: 0.85rem; font-weight: 500; color: var(--text-primary); line-height: 1.3;">
+                <span class="lang-en">United National Develoment Program</span>
+                <span class="lang-ar">برنامج الأمم المتحدة الإنمائي</span>
+              </div>
+            </div>
+
+            <!-- Iraq Red Crescent Society -->
+            <div style="text-align: center; max-width: 160px;">
+              <img src="main/work/red crescent.jpg" alt="Iraq Red Crescent Society" style="height: 70px; object-fit: contain; margin-bottom: 0.5rem;">
+              <div style="font-size: 0.85rem; font-weight: 500; color: var(--text-primary); line-height: 1.3;">
+                <span class="lang-en">Iraq Red Crescent Society</span>
+                <span class="lang-ar">جمعية الهلال الأحمر العراقي</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==========================================================================
+         16. SKILLS SUB-VIEW (ID: skills)
+         ========================================================================== -->
+    <div id="skills" class="details-subview">
+      <div class="subview-header">
+        <h2>
+          <span class="lang-en">Skills Portfolio</span>
+          <span class="lang-ar">محفظة المهارات</span>
+        </h2>
+        <button class="subview-back-btn" onclick="navigateToSection('overview')" aria-label="Back to Overview">
+          <span class="lang-en">&larr; Back to Dashboard</span>
+          <span class="lang-ar">&rarr; العودة للوحة التحكم</span>
+        </button>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Personal Skills -->
+        <div class="skills-category-card">
+          <h3 class="skills-category-title">
+            <span class="lang-en">Personal Skills</span>
+            <span class="lang-ar">مهارات شخصية</span>
+          </h3>
+          <div class="skills-list">
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Communication</span><span class="lang-ar">التواصل</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Teamwork</span><span class="lang-ar">العمل الجماعي</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Problem Solving</span><span class="lang-ar">حل المشكلات</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Adaptability</span><span class="lang-ar">القدرة على التكيف</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Time Management & Rigor</span><span class="lang-ar">إدارة الوقت والصرامة في العمل</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Creativity</span><span class="lang-ar">الإبداع</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Administrative Skills -->
+        <div class="skills-category-card">
+          <h3 class="skills-category-title">
+            <span class="lang-en">Administrative Skills</span>
+            <span class="lang-ar">مهارات إدارية</span>
+          </h3>
+          <div class="skills-list">
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Project Management</span><span class="lang-ar">إدارة المشاريع</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Leadership</span><span class="lang-ar">القيادة</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Administrative Correspondence</span><span class="lang-ar">المراسلات والخطابات الإدارية</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Strategic Planning</span><span class="lang-ar">التخطيط الاستراتيجي</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Document Management & Archiving</span><span class="lang-ar">إدارة المستندات والأرشفة</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Budgeting</span><span class="lang-ar">إعداد الميزانية</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Accounts Receivable & Payable</span><span class="lang-ar">إدارة المقبوضات والمدفوعات</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Warehouse Operations Management</span><span class="lang-ar">إدارة العمليات المستودعية</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">VAT Accounting</span><span class="lang-ar">محاسبة ضريبة القيمة المضافة</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research & Analysis -->
+        <div class="skills-category-card">
+          <h3 class="skills-category-title">
+            <span class="lang-en">Research & Analysis</span>
+            <span class="lang-ar">البحث والتحليل</span>
+          </h3>
+          <div class="skills-list">
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Source Verification & Review</span><span class="lang-ar">التحقق ومراجعة المصادر والبيانات</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Data Collection & Structuring</span><span class="lang-ar">جمع وتنظيم البيانات المهنية</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Analytical Report Writing</span><span class="lang-ar">كتابة التقارير التحليلية والعملية</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technology Skills -->
+        <div class="skills-category-card">
+          <h3 class="skills-category-title">
+            <span class="lang-en">Technology Skills</span>
+            <span class="lang-ar">مهارات تكنولوجية</span>
+          </h3>
+          <div class="skills-list">
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Excel VBA</span><span class="lang-ar">Excel VBA</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Power BI</span><span class="lang-ar">Power BI</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">SQL</span><span class="lang-ar">SQL</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Microsoft Office 365</span><span class="lang-ar">مايكروسوفت أوفيس 365</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Microsoft Dynamics</span><span class="lang-ar">مايكروسوفت دينامكس</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Odoo ERP</span><span class="lang-ar">Odoo ERP</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Zoho ERP</span><span class="lang-ar">Zoho ERP</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">AI Tools</span><span class="lang-ar">أدوات الذكاء الاصطناعي</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Tableau</span><span class="lang-ar">Tableau</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">QuickBooks</span><span class="lang-ar">QuickBooks</span></span>
+            </div>
+            <div class="skills-list-item">
+              <span class="skill-name"><span class="lang-en">Google Workspace & AI</span><span class="lang-ar">مجموعة جوجل والذكاء الاصطناعي</span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         17. EDUCATION SUB-VIEW (ID: education)
+         ========================================================================== -->
+    <div id="education" class="details-subview">
+      <div class="subview-header">
+        <h2>
+          <span class="lang-en">Academic Education</span>
+          <span class="lang-ar">التعليم الأكاديمي</span>
+        </h2>
+        <button class="subview-back-btn" onclick="navigateToSection('overview')" aria-label="Back to Overview">
+          <span class="lang-en">&larr; Back to Dashboard</span>
+          <span class="lang-ar">&rarr; العودة للوحة التحكم</span>
+        </button>
+      </div>
+
+      <div class="timeline">
+        <!-- Degree 01 -->
+        <div class="timeline-item">
+          <div class="timeline-meta">2020</div>
+          <h3 class="timeline-title">
+            <span class="lang-en">Bachelor's Degree in Economics &amp; Administration &mdash; Department of Economics</span>
+            <span class="lang-ar">درجة البكالوريوس في الاقتصاد والإدارة &mdash; قسم الاقتصاد</span>
+          </h3>
+          <div class="timeline-subtitle">
+            <span class="lang-en">University of Tikrit &mdash; Iraq</span>
+            <span class="lang-ar">جامعة تكريت &mdash; العراق</span>
+          </div>
+          <p class="timeline-desc" style="margin-top: 0.5rem; font-size: 0.95rem; color: var(--text-secondary);">
+            <strong style="color: var(--text-primary);"><span class="lang-en">Graduation Research:</span><span class="lang-ar">بحث التخرج:</span></strong>
+            <span class="lang-en">The reality of small and medium industries in Iraq. Bachelor's degree graduation research 2019-2020</span>
+            <span class="lang-ar">واقع الصناعات الصغيرة والمتوسطة في العراق 2019-2020</span>
+          </p>
+
+        </div>
+
+        <!-- Degree 02 -->
+        <div class="timeline-item">
+          <div class="timeline-meta">2022</div>
+          <h3 class="timeline-title">
+            <span class="lang-en">Diploma in Accounting</span>
+            <span class="lang-ar">شهادة الدبلوم في المحاسبة</span>
+          </h3>
+          <div class="timeline-subtitle">
+            <span class="lang-en">Technical Institute &mdash; Baghdad, Iraq</span>
+            <span class="lang-ar">المعهد التقني &mdash; بغداد، العراق</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         18. LANGUAGES SUB-VIEW (ID: languages)
+         ========================================================================== -->
+    <div id="languages" class="details-subview">
+      <div class="subview-header">
+        <h2>
+          <span class="lang-en">Language Proficiency</span>
+          <span class="lang-ar">الكفاءة اللغوية</span>
+        </h2>
+        <button class="subview-back-btn" onclick="navigateToSection('overview')" aria-label="Back to Overview">
+          <span class="lang-en">&larr; Back to Dashboard</span>
+          <span class="lang-ar">&rarr; العودة للوحة التحكم</span>
+        </button>
+      </div>
+
+      <div class="lang-list">
+        <!-- Arabic -->
+        <div class="lang-item">
+          <span class="lang-name">
+            <span class="lang-en">Arabic</span>
+            <span class="lang-ar">العربية</span>
+          </span>
+          <span class="lang-level">
+            <span class="lang-en">Native</span>
+            <span class="lang-ar">اللغة الأم</span>
+          </span>
+        </div>
+
+        <!-- English -->
+        <div class="lang-item">
+          <span class="lang-name">
+            <span class="lang-en">English</span>
+            <span class="lang-ar">الإنجليزية</span>
+          </span>
+          <span class="lang-level">
+            <span class="lang-en">Reading & Writing &mdash; Excellent | Speaking &mdash; Intermediate</span>
+            <span class="lang-ar">قراءة وكتابة &mdash; ممتاز | التحدث &mdash; متوسط</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         19. TRAINING & COURSES SUB-VIEW (ID: training)
+         ========================================================================== -->
+    <div id="training" class="details-subview">
+      <div class="subview-header">
+        <h2>
+          <span class="lang-en">Training & Certificates</span>
+          <span class="lang-ar">الدورات التدريبية والشهادات</span>
+        </h2>
+        <button class="subview-back-btn" onclick="navigateToSection('overview')" aria-label="Back to Overview">
+          <span class="lang-en">&larr; Back to Dashboard</span>
+          <span class="lang-ar">&rarr; العودة للوحة التحكم</span>
+        </button>
+      </div>
+      
+
+      <div class="timeline">
+        <!-- Certificate 1 -->
+        <div class="timeline-item">
+          <div class="timeline-meta">August 2026</div>
+          <h3 class="timeline-title">
+            <span class="lang-en">Certificate of Appreciation – Dedicated Employee</span>
+            <span class="lang-ar">شهادة تقدير – موظف متفانٍ</span>
+          </h3>
+          <div class="timeline-subtitle">
+            <span class="lang-en">Janat Al-Frdous Foundation for Relief and Development</span>
+            <span class="lang-ar">مؤسسة جنة الفردوس للإغاثة والتنمية</span>
+          </div>
+        </div>
+
+        <!-- Certificate OSHAcademy -->
+        <div class="timeline-item">
+          <div class="timeline-meta">July 2026</div>
+          <h3 class="timeline-title">
+            <span class="lang-en">Introduction to OSHAcademy</span>
+            <span class="lang-ar">ورشة مقدمة عن أوشا الأكاديمية الخاصة بالسلامة</span>
+          </h3>
+          <div class="timeline-subtitle">
+            <span class="lang-en">OSHAcademy</span>
+            <span class="lang-ar">أوشا أكاديمي</span>
+          </div>
+        </div>
+
+        <!-- Certificate AI Cloud 101 -->
+        <div class="timeline-item">
+          <div class="timeline-meta">June 2026</div>
+          <h3 class="timeline-title">
+            <span class="lang-en">AI Cloud 101</span>
+            <span class="lang-ar">كورس في الكلاود الخاص بالذكاء الاصطناعي 101</span>
+          </h3>
+          <div class="timeline-subtitle">
+            <span class="lang-en">IBM / Coursera</span>
+            <span class="lang-ar">منصة كورسيرا / IBM</span>
+          </div>
+        </div>
+
+        <!-- Certificate AI Fluency Cloud -->
+        <div class="timeline-item">
+          <div class="timeline-meta">June 2026</div>
+          <h3 class="timeline-title">
+            <span class="lang-en">AI Fluency Cloud</span>
+            <span class="lang-ar">كورس الذكاء الاصطناعي كلاود (AI Fluency)</span>
+          </h3>
+          <div class="timeline-subtitle">
+            <span class="lang-en">IBM / Coursera</span>
+            <span class="lang-ar">منصة كورسيرا / IBM</span>
+          </div>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="timeline-item">
+          <div class="timeline-meta">October 2024</div>
+          <h3 class="timeline-title">
+            <span class="lang-en">Capacity Building Training for Community Workers</span>
+            <span class="lang-ar">تدريب بناء القدرات للعاملين المجتمعيين</span>
+          </h3>
+          <div class="timeline-subtitle">
+            <span class="lang-en">In collaboration with ASB Iraq and Janat Al-Frdous Foundation for Relief and Development</span>
+            <span class="lang-ar">بالتعاون مع ASB العراق ومؤسسة جنة الفردوس للإغاثة والتنمية</span>
+          </div>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="timeline-item">
+          <div class="timeline-meta">March 2024</div>
+          <h3 class="timeline-title">
+            <span class="lang-en">Financial Management for Development Professional (FMD Pro)</span>
+            <span class="lang-ar">الإدارة المالية لمحترفي التنمية (FMD Pro)</span>
+          </h3>
+          <div class="timeline-subtitle">
+            <span class="lang-en">Humanitarian Leadership Academy</span>
+            <span class="lang-ar">أكاديمية القيادة الإنسانية</span>
+          </div>
+        </div>
+
+        <!-- Certificate 4 -->
+        <div class="timeline-item">
+          <div class="timeline-meta">February 2024</div>
+          <h3 class="timeline-title">
+            <span class="lang-en">Project Management Development (PMD)</span>
+            <span class="lang-ar">تطوير إدارة المشاريع (PMD)</span>
+          </h3>
+          <div class="timeline-subtitle">
+            <span class="lang-en">Humanitarian Leadership Academy</span>
+            <span class="lang-ar">أكاديمية القيادة الإنسانية</span>
+          </div>
+        </div>
+
+        <!-- Certificate 5 -->
+        <div class="timeline-item">
+          <div class="timeline-meta">June 2023</div>
+          <h3 class="timeline-title">
+            <span class="lang-en">English for Business</span>
+            <span class="lang-ar">اللغة الإنجليزية للأعمال</span>
+          </h3>
+          <div class="timeline-subtitle">
+            <span class="lang-en">Mindluster Platform</span>
+            <span class="lang-ar">منصة Mindluster</span>
+          </div>
+        </div>
+
+        <!-- Certificate 6 -->
+        <div class="timeline-item">
+          <div class="timeline-meta">September 2022</div>
+          <h3 class="timeline-title">
+            <span class="lang-en">Advocacy, Integrity & Transparency Workshop</span>
+            <span class="lang-ar">ورشة عمل المناصرة والنزاهة والشفافية</span>
+          </h3>
+          <div class="timeline-subtitle">
+            <span class="lang-en">In collaboration with Janat Al-Firdous Foundation for Relief and Development and UNDP</span>
+            <span class="lang-ar">بالتعاون مع مؤسسة جنة الفردوس للإغاثة والتنمية وبرنامج الأمم المتحدة الإنمائي</span>
+          </div>
+        </div>
+
+        <!-- Certificate 7 -->
+        <div class="timeline-item">
+          <div class="timeline-meta">May 2022</div>
+          <h3 class="timeline-title">
+            <span class="lang-en">International Computer Driving Licence (ICDL)</span>
+            <span class="lang-ar">الرخصة الدولية لقيادة الحاسب الآلي (ICDL)</span>
+          </h3>
+          <div class="timeline-subtitle">
+            <span class="lang-en">M3aarf Platform</span>
+            <span class="lang-ar">منصة معارف (M3aarf)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         RESEARCH SUB-VIEW (ID: research)
+         ========================================================================== -->
+    <div id="research" class="details-subview">
+      <div class="subview-header">
+        <h2>
+          <span class="lang-en">Academic & Independent Research</span>
+          <span class="lang-ar">البحوث الأكاديمية والمستقلة</span>
+        </h2>
+        <button class="subview-back-btn" onclick="navigateToSection('overview')" aria-label="Back to Overview">
+          <span class="lang-en">&larr; Back to Dashboard</span>
+          <span class="lang-ar">&rarr; العودة للوحة التحكم</span>
+        </button>
+      </div>
+      
+      <p style="margin-bottom: var(--space-md);">
+        <span class="lang-en">This section features academic research, graduation papers, and independent analytical studies.</span>
+        <span class="lang-ar">يعرض هذا القسم البحوث الأكاديمية، أوراق التخرج، والدراسات التحليلية المستقلة.</span>
+      </p>
+
+      <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 6px; padding: var(--space-lg); margin-top: var(--space-md); margin-bottom: var(--space-lg); box-shadow: var(--shadow-sm); text-align: right;">
+        <h3 style="margin-bottom: 0.75rem; color: var(--accent-color); font-size: 1.2rem; line-height: 1.4;">
+          <span class="lang-en">The reality of small and medium industries in Iraq. Bachelor's degree graduation research 2019-2020</span>
+          <span class="lang-ar">واقع الصناعات الصغيرة والمتوسطة في العراق 2019-2020</span>
+        </h3>
+        <p style="margin-bottom: 1.25rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5;">
+          <span class="lang-en">Bachelor's Degree Graduation Research &mdash; Department of Economics, University of Tikrit (2019-2020)</span>
+          <span class="lang-ar">بحث تخرج لنيل درجة البكالوريوس &mdash; قسم الاقتصاد، جامعة تكريت (2019-2020)</span>
+        </p>
+        <!-- Links for Arabic Layout (Google Drive only) -->
+        <div class="lang-ar" style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+            <a href="https://drive.google.com/file/d/1adkxYirgKJsF5l0eX-RKI-4RNSO112cK/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+              عرض البحث (بالعربية) على Drive
+            </a>
+          </div>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+            <a href="https://drive.google.com/file/d/1CKdDFMb-icbyYwufVS3dEmbswM8X-mCV/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+              عرض المستخلص (بالإنجليزية) على Drive
+            </a>
+            <a href="https://drive.google.com/file/d/1I2umo1tJdeEBLrq1Mm9hrbEkd0hl9rGh/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+              عرض المستخلص (بالعربية) على Drive
+            </a>
+          </div>
+        </div>
+
+        <!-- Links for English Layout (Google Drive only) -->
+        <div class="lang-en" style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+            <a href="https://drive.google.com/file/d/1CKdDFMb-icbyYwufVS3dEmbswM8X-mCV/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+              View Abstract (EN) on Drive
+            </a>
+            <a href="https://drive.google.com/file/d/1I2umo1tJdeEBLrq1Mm9hrbEkd0hl9rGh/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+              View Abstract (AR) on Drive
+            </a>
+          </div>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+            <a href="https://drive.google.com/file/d/1adkxYirgKJsF5l0eX-RKI-4RNSO112cK/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+              View Research (AR) on Drive
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Research Card 2: Blacksmith Project 2026 ===== -->
+      <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 6px; padding: var(--space-lg); margin-top: var(--space-md); margin-bottom: var(--space-lg); box-shadow: var(--shadow-sm); text-align: right;">
+        <h3 style="margin-bottom: 0.75rem; color: var(--accent-color); font-size: 1.2rem; line-height: 1.4;">
+          <span class="lang-en">Performance Evaluation and Sustainability of Economic Projects – Blacksmith Project 2026 (Applied Research)</span>
+          <span class="lang-ar">تقييم أداء واستدامة المشاريع الاقتصادية – مشروع الحدادة – 2026 (بحث تطبيقي)</span>
+        </h3>
+        <p style="margin-bottom: 1.25rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5;">
+          <span class="lang-en">Independent Applied Research &mdash; 2026</span>
+          <span class="lang-ar">بحث تطبيقي مستقل &mdash; 2026</span>
+        </p>
+
+        <!-- Links for Arabic Layout -->
+        <div class="lang-ar" style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+            <a href="https://drive.google.com/file/d/1NNGlTEtfWyhHwFVp3lxpFhMKiuzVLgo0/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+              عرض البحث الكامل (بالعربية) على Drive
+            </a>
+          </div>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+            <a href="https://drive.google.com/file/d/1LLzAdkooDtPCyIu88Y0rPmh_tuZ90kZX/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+              عرض المستخلص (بالإنجليزية) على Drive
+            </a>
+            <a href="https://drive.google.com/file/d/12dCnubIudxcy0SvHwqzv7-_2tVB3vYo_/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+              عرض المستخلص (بالعربية) على Drive
+            </a>
+          </div>
+        </div>
+
+        <!-- Links for English Layout -->
+        <div class="lang-en" style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+            <a href="https://drive.google.com/file/d/1LLzAdkooDtPCyIu88Y0rPmh_tuZ90kZX/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+              View Abstract (EN) on Drive
+            </a>
+            <a href="https://drive.google.com/file/d/12dCnubIudxcy0SvHwqzv7-_2tVB3vYo_/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+              View Abstract (AR) on Drive
+            </a>
+          </div>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+            <a href="https://drive.google.com/file/d/1NNGlTEtfWyhHwFVp3lxpFhMKiuzVLgo0/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+              View Full Research (AR) on Drive
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         20. PROJECTS SUB-VIEW (ID: projects)
+         ========================================================================== -->
+    <div id="projects" class="details-subview">
+      <div class="subview-header">
+        <h2>
+          <span class="lang-en">Projects Portfolio</span>
+          <span class="lang-ar">سجل المشروعات المهنية</span>
+        </h2>
+        <button class="subview-back-btn" onclick="navigateToSection('overview')" aria-label="Back to Overview">
+          <span class="lang-en">&larr; Back to Dashboard</span>
+          <span class="lang-ar">&rarr; العودة للوحة التحكم</span>
+        </button>
+      </div>
+      
+      <p style="margin-bottom: var(--space-md);">
+        <span class="lang-en">This section holds structural templates for operational, research, or accounting projects that will be detailed here. The structure supports description, methodology, toolkits, and professional roles.</span>
+        <span class="lang-ar">يحتوي هذا القسم على قوالب هيكلية للمشاريع التشغيلية، البحثية، والمالية المحاسبية التي سيتم تفصيلها لاحقاً. يدعم هذا الهيكل توضيح المهام، الأدوات المستخدمة، والمسؤوليات المهنية.</span>
+      </p>
+
+      <div class="projects-grid">
+        <!-- Project Card: AI-Easy platform -->
+        <div class="project-card">
+          <!-- Small/Mini Carousel -->
+          <div class="project-carousel" style="height: 200px;">
+            <div class="carousel-track">
+              <img src="main/project/Ai%20website/1.jpg" alt="AI-Easy platform 1" loading="lazy">
+              <img src="main/project/Ai%20website/2.jpg" alt="AI-Easy platform 2" loading="lazy">
+              <img src="main/project/Ai%20website/3.jpg" alt="AI-Easy platform 3" loading="lazy">
+              <img src="main/project/Ai%20website/4.jpg" alt="AI-Easy platform 4" loading="lazy">
+            </div>
+            <button class="carousel-btn prev-btn" aria-label="Previous image">&#10094;</button>
+            <button class="carousel-btn next-btn" aria-label="Next image">&#10095;</button>
+          </div>
+          
+          <div class="project-card-content">
+            <h3 class="project-card-title">
+              <a href="https://ai-easy.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                AI-Easy platform
+              </a>
+            </h3>
+            <div class="project-card-tools">
+              <span class="lang-en">AI Tools · Web Platform · File Processing</span>
+              <span class="lang-ar">أدوات ذكاء اصطناعي · منصة ويب · معالجة الملفات</span>
+            </div>
+            <p class="project-card-desc">
+              <span class="lang-en">A versatile platform integrating AI tools for file and image processing, PDF conversion, and more.</span>
+              <span class="lang-ar">منصة متعددة الاستخدامات تدمج أدوات الذكاء الاصطناعي لمعالجة الملفات والصور، وتحويل ملفات PDF، والمزيد.</span>
+            </p>
+            <div class="project-meta-row">
+              <span class="project-meta-label"><span class="lang-en">Link:</span><span class="lang-ar">الرابط:</span></span>
+              <span>
+                <a href="https://ai-easy.vercel.app/" target="_blank" rel="noopener noreferrer" style="font-weight: 500;">
+                  <span class="lang-en">Visit Project &nearr;</span>
+                  <span class="lang-ar">زيارة المشروع &nearr;</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card: Local NGO Identity -->
+        <div class="project-card">
+          <div class="project-carousel" style="height: 200px;">
+            <div class="carousel-track">
+              <img src="main/project/jf-card/jf1.jpg" alt="Local NGO Identity 1" loading="lazy">
+              <img src="main/project/jf-card/jf2.jpg" alt="Local NGO Identity 2" loading="lazy">
+              <img src="main/project/jf-card/jf3.jpg" alt="Local NGO Identity 3" loading="lazy">
+            </div>
+            <button class="carousel-btn prev-btn" aria-label="Previous image">&#10094;</button>
+            <button class="carousel-btn next-btn" aria-label="Next image">&#10095;</button>
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-title">
+              <a href="https://jf-org.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                Local NGO Identity
+              </a>
+            </h3>
+            <div class="project-card-tools">
+              <span class="lang-en">Web Development · NGO Profile · Identity</span>
+              <span class="lang-ar">تطوير الويب · ملف منظمة · هوية</span>
+            </div>
+            <p class="project-card-desc">
+              <span class="lang-en">A comprehensive identity and informative profile for a local relief and development organization.</span>
+              <span class="lang-ar">هوية شاملة وملف تعريفي لمنظمة إغاثة وتنمية محلية.</span>
+            </p>
+            <div class="project-meta-row">
+              <span class="project-meta-label"><span class="lang-en">Link:</span><span class="lang-ar">الرابط:</span></span>
+              <span>
+                <a href="https://jf-org.vercel.app/" target="_blank" rel="noopener noreferrer" style="font-weight: 500;">
+                  <span class="lang-en">Visit Project &nearr;</span>
+                  <span class="lang-ar">زيارة المشروع &nearr;</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card: Janat Al-Fardos Foundation Website -->
+        <div class="project-card">
+          <div class="project-carousel" style="height: 200px;">
+            <div class="carousel-track">
+              <img src="main/project/website/aa1.jpg" alt="Janat Al-Fardos Foundation Website 1" loading="lazy">
+              <img src="main/project/website/aa2.jpg" alt="Janat Al-Fardos Foundation Website 2" loading="lazy">
+              <img src="main/project/website/aa3.jpg" alt="Janat Al-Fardos Foundation Website 3" loading="lazy">
+            </div>
+            <button class="carousel-btn prev-btn" aria-label="Previous image">&#10094;</button>
+            <button class="carousel-btn next-btn" aria-label="Next image">&#10095;</button>
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-title">
+              <a href="https://jf-iq.org/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                Janat Al-Fardos Foundation Website
+              </a>
+            </h3>
+            <div class="project-card-tools">
+              <span class="lang-en">Web Development · NGO Website · CMS</span>
+              <span class="lang-ar">تطوير الويب · موقع منظمة · نظام إدارة محتوى</span>
+            </div>
+            <p class="project-card-desc">
+              <span class="lang-en">A comprehensive website for Janat Al-Fardos Foundation, showcasing activities, photo galleries, and past projects.</span>
+              <span class="lang-ar">موقع إلكتروني شامل لمؤسسة جنة الفردوس، يعرض الأنشطة، معارض الصور، والمشاريع السابقة.</span>
+            </p>
+            <div class="project-meta-row">
+              <span class="project-meta-label"><span class="lang-en">Link:</span><span class="lang-ar">الرابط:</span></span>
+              <span>
+                <a href="https://jf-iq.org/" target="_blank" rel="noopener noreferrer" style="font-weight: 500;">
+                  <span class="lang-en">Visit Project &nearr;</span>
+                  <span class="lang-ar">زيارة المشروع &nearr;</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card: Excel VBA HR Management System -->
+        <div class="project-card">
+          <div class="project-carousel" style="height: 200px;">
+            <div class="carousel-track">
+              <img src="main/project/vba%20hr/vba%20hr.jpg" alt="Excel VBA HR Management System" loading="lazy">
+            </div>
+            <!-- Hide buttons since there is only 1 image -->
+            <button class="carousel-btn prev-btn" aria-label="Previous image" style="display: none;">&#10094;</button>
+            <button class="carousel-btn next-btn" aria-label="Next image" style="display: none;">&#10095;</button>
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-title">
+              <span class="lang-en">Excel VBA HR Management System</span>
+              <span class="lang-ar">نظام إدارة الموارد البشرية بـ Excel VBA</span>
+            </h3>
+            <div class="project-card-tools">
+              <span class="lang-en">Excel VBA · HR Management · Automation</span>
+              <span class="lang-ar">إكسل VBA · إدارة الموارد البشرية · أتمتة</span>
+            </div>
+            <p class="project-card-desc">
+              <span class="lang-en">An integrated HR management system developed using Excel VBA, automating employee data, payroll, and attendance tracking.</span>
+              <span class="lang-ar">نظام متكامل لإدارة الموارد البشرية مطور باستخدام Excel VBA لأتمتة بيانات الموظفين، الرواتب، وتتبع الحضور.</span>
+            </p>
+            <div class="project-meta-row">
+              <span class="project-meta-label"><span class="lang-en">Type:</span><span class="lang-ar">النوع:</span></span>
+              <span><span class="lang-en">Offline System / Desktop Application</span><span class="lang-ar">نظام غير متصل / تطبيق مكتبي</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card: Visitor Management System for Local NGOs -->
+        <div class="project-card">
+          <div class="project-carousel" style="height: 200px;">
+            <div class="carousel-track">
+              <img src="main/project/org%20vba/org1.jpg" alt="Visitor Management System 1" loading="lazy">
+              <img src="main/project/org%20vba/org2.jpg" alt="Visitor Management System 2" loading="lazy">
+              <img src="main/project/org%20vba/org3.jpg" alt="Visitor Management System 3" loading="lazy">
+              <img src="main/project/org%20vba/org4.jpg" alt="Visitor Management System 4" loading="lazy">
+              <img src="main/project/org%20vba/org5.jpg" alt="Visitor Management System 5" loading="lazy">
+            </div>
+            <button class="carousel-btn prev-btn" aria-label="Previous image">&#10094;</button>
+            <button class="carousel-btn next-btn" aria-label="Next image">&#10095;</button>
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-title">
+              <span class="lang-en">Visitor Management System for Local NGOs</span>
+              <span class="lang-ar">نظام إدارة الزوار للمنظمات المحلية</span>
+            </h3>
+            <div class="project-card-tools">
+              <span class="lang-en">Excel VBA · NGO Operations · Automation</span>
+              <span class="lang-ar">إكسل VBA · عمليات المنظمات · أتمتة</span>
+            </div>
+            <p class="project-card-desc">
+              <span class="lang-en">An Excel VBA system for managing visitors/beneficiaries, grant management, and automated Word report generation.</span>
+              <span class="lang-ar">نظام Excel VBA لإدارة الزوار والمستفيدين، وإدارة المنح، وإنشاء تقارير Word تلقائياً.</span>
+            </p>
+            <div class="project-meta-row">
+              <span class="project-meta-label"><span class="lang-en">Type:</span><span class="lang-ar">النوع:</span></span>
+              <span><span class="lang-en">Offline System / Desktop Application</span><span class="lang-ar">نظام غير متصل / تطبيق مكتبي</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card: Mini Sales Management App -->
+        <div class="project-card">
+          <div class="project-carousel" style="height: 200px;">
+            <div class="carousel-track">
+              <img src="main/project/sales/1.jpg" alt="Mini Sales Management App 1" loading="lazy">
+              <img src="main/project/sales/2.jpg" alt="Mini Sales Management App 2" loading="lazy">
+              <img src="main/project/sales/3.jpg" alt="Mini Sales Management App 3" loading="lazy">
+              <img src="main/project/sales/4.jpg" alt="Mini Sales Management App 4" loading="lazy">
+              <img src="main/project/sales/5.jpg" alt="Mini Sales Management App 5" loading="lazy">
+              <img src="main/project/sales/6.jpg" alt="Mini Sales Management App 6" loading="lazy">
+              <img src="main/project/sales/7.jpg" alt="Mini Sales Management App 7" loading="lazy">
+            </div>
+            <button class="carousel-btn prev-btn" aria-label="Previous image">&#10094;</button>
+            <button class="carousel-btn next-btn" aria-label="Next image">&#10095;</button>
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-title">
+              <span class="lang-en">Mini Sales Management App</span>
+              <span class="lang-ar">تطبيق مصغر لإدارة المبيعات</span>
+            </h3>
+            <div class="project-card-tools">
+              <span class="lang-en">Excel VBA · Sales Tracking · Inventory</span>
+              <span class="lang-ar">إكسل VBA · تتبع المبيعات · المخزون</span>
+            </div>
+            <p class="project-card-desc">
+              <span class="lang-en">A micro sales management app built with Excel VBA for small businesses to track sales, inventory, and customers.</span>
+              <span class="lang-ar">تطبيق مصغر لإدارة المبيعات مبني باستخدام Excel VBA للشركات الصغيرة لتتبع المبيعات، المخزون، والعملاء.</span>
+            </p>
+            <div class="project-meta-row">
+              <span class="project-meta-label"><span class="lang-en">Type:</span><span class="lang-ar">النوع:</span></span>
+              <span><span class="lang-en">Offline System / Desktop Application</span><span class="lang-ar">نظام غير متصل / تطبيق مكتبي</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card: Accounts Receivable & Payable System -->
+        <div class="project-card">
+          <div class="project-carousel" style="height: 200px;">
+            <div class="carousel-track">
+              <img src="main/project/account/a.jpg" alt="Accounts Receivable System 1" loading="lazy">
+              <img src="main/project/account/b.jpg" alt="Accounts Receivable System 2" loading="lazy">
+              <img src="main/project/account/c.jpg" alt="Accounts Receivable System 3" loading="lazy">
+              <img src="main/project/account/d.jpg" alt="Accounts Receivable System 4" loading="lazy">
+              <img src="main/project/account/e.jpg" alt="Accounts Receivable System 5" loading="lazy">
+            </div>
+            <button class="carousel-btn prev-btn" aria-label="Previous image">&#10094;</button>
+            <button class="carousel-btn next-btn" aria-label="Next image">&#10095;</button>
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-title">
+              <span class="lang-en">Accounts Receivable & Payable System</span>
+              <span class="lang-ar">نظام إدارة المقبوضات والمدفوعات</span>
+            </h3>
+            <div class="project-card-tools">
+              <span class="lang-en">Excel VBA · Accounting · Financial Reports</span>
+              <span class="lang-ar">إكسل VBA · محاسبة · تقارير مالية</span>
+            </div>
+            <p class="project-card-desc">
+              <span class="lang-en">An Excel VBA accounting system for tracking incoming and outgoing financial transactions with clear financial reports.</span>
+              <span class="lang-ar">نظام محاسبي باستخدام Excel VBA لتتبع المعاملات المالية الواردة والصادرة مع تقارير مالية واضحة.</span>
+            </p>
+            <div class="project-meta-row">
+              <span class="project-meta-label"><span class="lang-en">Type:</span><span class="lang-ar">النوع:</span></span>
+              <span><span class="lang-en">Offline System / Desktop Application</span><span class="lang-ar">نظام غير متصل / تطبيق مكتبي</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <hr class="divider">
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>
+          <span class="lang-en">Khattab Ali Hassan</span>
+          <span class="lang-ar">خطاب علي حسن</span>
+        </h3>
+        <p style="margin-top: 0.5rem; margin-bottom: 0;">
+          <span class="lang-en">Operations &amp; Administration Professional</span>
+          <span class="lang-ar">متخصص في العمليات والإدارة</span>
+        </p>
+      </div>
+      
+      <div>
+        <div class="footer-title">
+          <span class="lang-en">Navigation</span>
+          <span class="lang-ar">روابط التنقل</span>
+        </div>
+        <div class="footer-nav">
+          <a href="index.html" class="footer-nav-link">
+            <span class="lang-en">Home</span>
+            <span class="lang-ar">الرئيسية</span>
+          </a>
+          <a href="details.html" class="footer-nav-link">
+            <span class="lang-en">Details</span>
+            <span class="lang-ar">تفاصيل</span>
+          </a>
+          <a href="index.html#contact" class="footer-nav-link">
+            <span class="lang-en">Contact</span>
+            <span class="lang-ar">اتصل بي</span>
+          </a>
+        </div>
+      </div>
+      
+      <div>
+        <div class="footer-title">
+          <span class="lang-en">Language</span>
+          <span class="lang-ar">اللغة</span>
+        </div>
+        <div class="footer-nav">
+          <a href="#" class="footer-nav-link lang-toggle-link" data-target-lang="en">English</a>
+          <a href="#" class="footer-nav-link lang-toggle-link" data-target-lang="ar">العربية (Arabic)</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <div>
+        &copy; <span id="year">2026</span> Khattab Ali Hassan. All rights reserved.
+      </div>
+      <div>
+        <span class="lang-en">Credible. Analytical. Academic. Operations-minded.</span>
+        <span class="lang-ar">مصداقية. تحليل. أكاديمي. توجه تشغيلي.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script logic -->
+  <script src="script.js"></script>
+</body>
+</html>
